@@ -1,0 +1,369 @@
+.square-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.container {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 60px 60px;
+    background-color: #0A0A0A;
+}
+.container-fluid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 20px 80px; /* Increased top padding from 80px to 120px */
+    min-height: 100vh !important;
+}
+
+.welcomeBarNew {
+    margin: 40px 0 30px; /* Added top margin */
+    background-color: rgba(255, 105, 0, 0.15);
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 105, 0, 0.6);
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    justify-self: center;
+    gap: 10px;
+    transform: translateY(51px);
+}
+
+
+.textOrange {
+    color: #FF6900;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.circle1 {
+    width: 12px;
+    height: 12px;
+    background-color: #FF6900;
+    border-radius: 50%;
+    animation: pulse 1s infinite;
+    flex-shrink: 0;
+}
+
+.circle2 {
+    width: 8px;
+    height: 8px;
+    background-color: #FF6900;
+    border-radius: 50%;
+    animation: pulse 1s infinite;
+    animation-delay: 0.5s;
+    flex-shrink: 0;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+.mainHomeText {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    /* Remove this line: */
+    /* transform: translateY(20%); */
+}
+
+.mainHeading1 {
+    color: white;
+    font-size: 52px;
+    font-weight: 700;
+    margin: 30px 0;
+    line-height: 1.4;
+}
+
+.highlight {
+    background: linear-gradient(135deg, rgb(249, 115, 22), rgb(251, 191, 36));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.subText {
+    color: #a1a1a1;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 30px 0 50px;
+}
+
+.statBox {
+    background-color: #141414;
+    border-radius: 25px;
+    width: 170px;
+    padding: 25px 15px;
+    margin: 10px;
+}
+
+.statNumber {
+    background: linear-gradient(135deg, #f97316, #fbbf24);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.statLabel {
+    color: #737373;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.valuesContainer {
+    background-color: #141414;
+    padding: 80px 20px; /* Reduced from 100px */
+    position: relative;
+}
+
+.valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.valuesSection {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.valuesHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.barOrange {
+    width: 5px;
+    height: 35px;
+    background: linear-gradient(135deg, rgb(251, 191, 36), rgb(249, 115, 22));
+    border-radius: 2px;
+}
+
+.valuesMainTitle {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.valuesSubtitle {
+    color: #a1a1a1;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+
+.valueCard {
+    background-color: rgba(20, 20, 20, 0.8);
+    border: 1px solid rgba(255, 105, 0, 0.2);
+    border-radius: 20px;
+    padding: 40px 30px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.valueCard:hover {
+    background: linear-gradient(135deg, rgba(255, 105, 0, 0.2), rgba(250, 79, 0, 0.2));
+    border-color: rgba(255, 105, 0, 0.6);
+}
+
+.valueTitle:hover {
+    color: #ffae5c;
+}
+
+.valueIcon {
+    font-size: 60px;
+    margin-bottom: 25px;
+    color: #FF6900;
+    line-height: 1;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valueTitle {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.valueDescription {
+    color: #a1a1a1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+
+/*////////////////////////// Team Section /////////////////////*/
+
+
+.team {
+    height: auto;
+    background-color: #0A0A0A;
+    padding: 80px 0 60px;
+}
+
+.welcomeBar2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 105, 0, 0.15);
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 105, 0, 0.6);
+    width: fit-content;
+    justify-self: center;
+    transform: translateY(0);
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mainHeading {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px 0 20px;
+}
+
+/* Author cards */
+/* Author cards - fix width */
+.authorCard {
+    background-color: rgba(20, 20, 20, 0.6);
+    border-radius: 18px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 268px;
+    transition: all 0.25s ease;
+    width: 100%; /* Changed from 341px to 100% */
+    max-width: 300px; /* Add max-width */
+    margin: 0 auto; /* Center the card */
+}
+
+.authorCard:hover {
+    border: 2px solid rgba(255, 105, 0, 0.6);
+
+}
+
+.authorImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 14px;
+    border: 3px solid rgba(255, 105, 0, 0.12);
+}
+
+.authorName {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 6px 0 4px;
+}
+
+.authorRole {
+    color: #a1a1a1;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Social icons */
+.socialIcons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin: 18px 0 30px;
+}
+
+.socialIcon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.18s ease, background 0.18s ease;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.socialIcon:hover {
+    background: rgba(255, 105, 0, 0.08);
+    border-color: rgba(255, 105, 0, 0.18);
+}
+
+.socialIcon svg {
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.6));
+}
+
+
+/* Add this to your team section CSS */
+.team .container .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.team .container .row > div {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,11 @@
+/* For all text selection */
+::selection {
+    background-color: #F97316; /* Light orange */
+    color: #fff; /* Keep text readable */
+}
+
+/* For Firefox */
+::-moz-selection {
+    background-color: #F97316;
+    color: #fff;
+}

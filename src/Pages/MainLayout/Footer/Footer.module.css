@@ -1,0 +1,140 @@
+.containerFluid {
+    background-color: #0a0a0a;
+    height: 50vh;
+}
+.footLogo {
+    background: linear-gradient(135deg, #ff6900, #ff6900);
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    padding-right: 17px;
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.footTitle {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+.footInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.12);
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #fff;
+}
+.footInput::placeholder {
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+}
+.footInput:focus {
+    outline: none;
+    border-color: #ff6900;
+    transition: all 0.3s ease;
+}
+.navLink {
+    color: #737373 !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 23px !important;
+}
+h5 {
+    color: #fff !important;
+    margin-bottom: 15px;
+}
+
+p.text-body-secondary {
+    color: #737373 !important;
+    font-weight: 600;
+}
+
+.footer {
+    color: #fff;
+}
+.container-fluid {
+    background-color: #0a0a0a;
+
+}
+
+.footLogo {
+    background: linear-gradient(135deg, #ff6900, #ff6900) !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 12px;
+    padding-right: 17px;
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footTitle {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.footInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+    background-color: #0a0a0a;
+}
+
+.footInput::placeholder {
+    font-size: 14px;
+    color: #999;
+}
+
+.footInput:focus {
+    outline: none;
+    border-color: #ff6900;
+    transition: all 0.3s ease;
+}
+
+li .nav-link {
+    color: #737373 !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 23px !important;
+}
+
+h5 {
+    color: #fff !important;
+    margin-bottom: 15px;
+}
+
+p.text-body-secondary {
+    color: #737373 !important;
+}
+
+.btnFoot {
+    background: linear-gradient(135deg, rgb(249, 115, 22), rgb(234, 88, 12));
+    border-radius: 50px;
+    width: 268px;
+    height: 52px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    transform: translateX(10px);
+}
+
+h5::after {
+    content: '';
+    display: block;
+    transform: translate(60px,-25px);
+    width: 35px;
+    height: 3px;
+    background: linear-gradient(100deg,rgb(234, 88, 12),rgb(249, 115, 22));
+    margin-top: 10px;
+
+}
